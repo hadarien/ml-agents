@@ -137,7 +137,7 @@ accepts arguments used to configure both training and inference phases.
 1. Navigate to the folder where you cloned the `ml-agents` repository. **Note**:
    If you followed the default [installation](Installation.md), then you should
    be able to run `mlagents-learn` from any directory.
-1. Run `mlagents-learn config/trainer_config.yaml --run-id=first3DBallRun`.
+1. Run `mlagents-learn config/trainer_config.yaml --run-id=first3DBallRun --train`.
    - `config/trainer_config.yaml` is the path to a default training
      configuration file that we provide. In includes training configurations for
      all our example environments, including 3DBall.
@@ -230,7 +230,7 @@ command-line prompt. If you close the window manually, the `.nn` file containing
 the trained model is not exported into the ml-agents folder.
 
 If you've quit the training early using Ctrl+C and want to resume training, run
-the same command again, appending the `--resume` flag:
+the same command again, appending the `--load` flag:
 
 ```sh
 mlagents-learn config/trainer_config.yaml --run-id=first3DBallRun --resume
